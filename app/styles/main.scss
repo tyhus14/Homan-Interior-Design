@@ -129,6 +129,9 @@ body {
 .nav-items {
     color: white;
     margin-right: 20px;
+    &:hover {
+        color: white;
+    }
 }
 
 .featured {
@@ -245,23 +248,46 @@ body {
 }
 
 .contact {
-    padding-top: 15px;
+    padding-top: 50px;
     span {
         color: rgb(70, 73, 73);
         font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 25px;
     }
 }
 
 .befores {
     position: relative;
+    margin-top: -190px;
 }
 
-.before-after {
-    height: 300px;
+.before {
     position: absolute;
     right: 0;
+    height: 300px;
+     &.active {
+        opacity: 0;
+    }
+    -webkit-transition: all 2s ease;
+    cursor: pointer;
 }
 
 .after {
-    opacity: 0;
+   position: absolute;
+   right: 0;
+   height: 300px;
+    &.active {
+        opacity: 1;
+    }
+    -webkit-transition: all 2s ease;
+    cursor: pointer;
+}
+
+
+
+.leaf-flip {
+    margin-top: 450px;
 }
