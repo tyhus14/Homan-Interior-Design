@@ -1,0 +1,1 @@
+$(".nav-items").bind("click",function(a){a.preventDefault();var b=$(this).attr("href");$("html, body").animate({scrollTop:$(b).offset().top},1500)}),$(".before").hover(function(){$(this).toggleClass("active"),$(".after").toggleClass("active")}),$(".before").click(function(){$(this).toggleClass("active"),$(".after").toggleClass("active")});
